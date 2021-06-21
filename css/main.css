@@ -1,21 +1,12 @@
 @charset "UTF-8";
 /* adaptación a 320 px*/
-:root {
-  --LDS: #333333;
-  --LDS1: #666666;
-  --LDS: #999999;
-  --LDS: #060078;
-  --LDS: #FFFFFF; }
-
 @media only screen and (min-width: 320px) {
   * {
-    padding: 1;
+    padding: 0;
     font-family: 'Nanum Gothic', sans-serif; }
   /* definición formato del body */
   body {
-    color: black;
-    margin: 0.5rem 0.5rem;
-    background-color: #9d9d9d; }
+    color: black; }
   /* definición de estructura de grilla */
   .grid {
     display: grid;
@@ -53,8 +44,6 @@
     color: black;
     margin: 12px 12px 12px 12px; }
     .header a {
-      display: inline-block;
-      position: relative;
       text-decoration: none; }
   .header__titulo {
     display: inline-block;
@@ -134,7 +123,6 @@
     padding-bottom: 20px;
     padding-right: 10px;
     padding-left: 10px;
-    background-color: #b3b3c8;
     border-style: groove; }
   /* Formato lista de formulario adaptada */
   dl, ol, ul {
@@ -143,9 +131,21 @@
     padding-left: 0; }
   /* Fin formato lista de formulario adaptada */
   #contactanosPAGE {
-    background-image: url("../Images/fondoContactanos.png");
-    background-position: left;
-    background-size: 50%; }
+    background-image: url("../Images/fondoContactanos.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; }
+  #cvPage {
+    background-image: url("../Images/trabaja.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  #QSPage {
+    background-image: url("../Images/quienes.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
   /* Definición de formatos generales */
   .titulo {
     font-weight: 600;
@@ -159,6 +159,9 @@
     padding: 0.5rem; }
   h2 {
     padding: 1rem; }
+  .btn {
+    padding: .1rem .6rem;
+    margin: .2rem; }
   /* Adaptación a 768 px para Grilla*/ }
 
 @media only screen and (min-width: 320px) and (min-width: 768px) {

@@ -17,9 +17,8 @@
     <!-- Título principal de la web -->
     <header id="grillaheader" class="header">
         <a class="header__logo" href="..\index.html"><img class="header__logo" src="..\Images\LDS.png" alt="Logo" title="Logo"> </a> 
-        <a class="header__logo" href="..\index.html"><h1 class= "header__titulo">Laboratorio <br>Dental<br>Sarcone</h1></a>
+        <a class="header__titulo" href="..\index.html"><h1 class= "header__titulo">Laboratorio <br>Dental<br>Sarcone</h1></a>
     </header>
-<main> 
     <!-- Menú para navegar por la web -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -53,18 +52,19 @@
     <!-- Fin de Menú para navegar por la web -->
 
     <!-- Sección que permite al user adjuntar su curriculum -->
-    <section class="container">
-        <form  class="formulario" action="action1.php" method="GET" enctype="application/x-www-form-urlencoded">
-        <h2>¡Trabaja con nosotros!</h2>
-        <form method="post" action="#" enctype="multipart/form-data"><label for="CV"><p class="textoBasico">Adjunte su CV</p></label>
-            <input type="file" id="cv" name="cv" multiple>
-            <input type="reset"  class="btn btn-secondary" value="Limpiar formulario">
-            <input type="submit" class="btn btn-secondary"  value="Enviar formulario">
+    <main id="cvPage">
+        <section class="container">
+            <form  class="formulario" action="action1.php" method="GET" enctype="application/x-www-form-urlencoded">
+            <h2>¡Trabaja con nosotros!</h2>
+            <form method="post" action="#" enctype="multipart/form-data"><label for="CV"><p class="textoBasico">¡Estamos buscando personas que se quieran sumar a nuestro equipo!<br>Si querés formar parte de nuestra organización, te invitamos a que nos adjuntes tu CV contándonos por qué te interesaría participar en alguna de nuestras posiciones. Buscamos graduados o estudiantes del último año de la carrera para reportar al laboratorio de San Justo. <br>También buscamos personal para realizar los envíos de ambas sucursales. <br>¡Animate!</p></label>
+                <input type="file" id="cv" name="cv" multiple>
+                <input type="reset"  class="btn btn-secondary" value="Limpiar formulario">
+                <input type="submit" class="btn btn-secondary"  value="Enviar formulario">
 
-        </form>
-        </form>
-    </section>
-</main>   
+            </form>
+            </form>
+        </section>
+    </main>   
     <!-- Pie de página con información de contacto, ubicación, redes sociales -->
     <footer id="grillafooter"> 
         <div class="footer__cuerpo">
