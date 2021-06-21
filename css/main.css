@@ -1,32 +1,21 @@
 @charset "UTF-8";
 /* adaptación a 320 px*/
+:root {
+  --LDS: #333333;
+  --LDS1: #666666;
+  --LDS: #999999;
+  --LDS: #060078;
+  --LDS: #FFFFFF; }
+
 @media only screen and (min-width: 320px) {
   * {
-    padding: 0;
+    padding: 1;
     font-family: 'Nanum Gothic', sans-serif; }
-  /* Bucle para color de los headings para desafío 12 */
-  h1 {
-    color: black; }
-  h2 {
-    color: black; }
-  h3 {
-    color: black; }
-  h4 {
-    color: black; }
-  h5 {
-    color: black; }
-  h6 {
-    color: black; }
-  /* Maps para color de los fondos para desafío 12 */
-  /*Each en la configuración de Maps para desafío 12*/
-  .fondoColor--Lila {
-    background-color: #d3d3db; }
-  .fondoColor--Principal {
-    background-color: white; }
   /* definición formato del body */
   body {
     color: black;
-    margin: 0.5rem 0.5rem; }
+    margin: 0.5rem 0.5rem;
+    background-color: #9d9d9d; }
   /* definición de estructura de grilla */
   .grid {
     display: grid;
@@ -61,7 +50,8 @@
   /* Fin de IDs para las grillas */
   /* Formato del Header y Título principal */
   .header {
-    padding: 1rem; }
+    color: black;
+    margin: 12px 12px 12px 12px; }
     .header a {
       display: inline-block;
       position: relative;

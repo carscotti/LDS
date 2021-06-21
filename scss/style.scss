@@ -1,34 +1,22 @@
 /* adaptación a 320 px*/
+:root {
+    --LDS: #333333;
+    --LDS1: #666666;
+    --LDS: #999999;
+    --LDS: #060078;
+    --LDS: #FFFFFF;
+  }
+
 @media only screen and (min-width: 320px) {
     * {
-        padding:0;
+        padding:1;
         font-family: 'Nanum Gothic', sans-serif;
-    }
-
-    /* Bucle para color de los headings para desafío 12 */
-    @for $i from 1 through 6 {
-        h#{$i} {
-           color: black ;
-        }
-    }
-
-    /* Maps para color de los fondos para desafío 12 */
-    $fondos: (
-        Lila: rgba(211, 211, 219, 1),
-        Principal:white  
-        );
-    
-    /*Each en la configuración de Maps para desafío 12*/
-    @each $fondo, $color in $fondos {
-        .fondoColor--#{$fondo} {
-            background-color:$color;
-        }
     }
     /* definición formato del body */
     body {
         color: black;
         margin: 0.5rem 0.5rem;
-        // background-color: rgba(209, 209, 231, 0.349);
+        background-color:rgb(157, 157, 157);
     }
 
     /* definición de estructura de grilla */
@@ -82,8 +70,8 @@
 
     /* Formato del Header y Título principal */
     .header {
-        padding: 1rem;
-        // margin:12px 12px 12px 12px; 
+        color: black;
+        margin: 12px 12px 12px 12px;
         a {
             display: inline-block;
             position: relative;
