@@ -3,12 +3,11 @@
 @media only screen and (min-width: 320px) {
     * {
         padding:0;
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        color: black;
     }
     /* definición formato del body */
     body {
-        color: black;
-        // background-color:rgb(157, 157, 157);
     }
 
     /* definición de estructura de grilla */
@@ -31,7 +30,6 @@
     /* IDs para las grillas */
     #grillaheader { 
         grid-area: grillaheader;
-        color: black;
         width: 100%;
     }
     #menuGrilla {
@@ -64,6 +62,7 @@
     .header {
         color: black;
         margin: 12px 12px 12px 12px;
+        background-color: gray;
         a {
             text-decoration: none;            
         }
@@ -82,15 +81,14 @@
         height: 50px;
         vertical-align: inherit;
         .header__logo:Hover {
-            width: 70px;
-            height: 70px; 
+            width: 60px;
+            height: 60px; 
         }
     }
     /* Formato del Header y Título principal */
 
     /* Formato de Sección principal de Home */
     .cuerpo__bienvenidos{
-        color: black;
         font-size: 1.4rem;
         font-weight: 800;
         display: inline-block;
@@ -101,7 +99,6 @@
         text-align:center;
         p {
             font-size: 0.7rem;
-            color:black;
             font-weight: 400;
             letter-spacing: 0.4px;
             font-style: italic;
@@ -117,9 +114,7 @@
     /* Formato footer */
     .footer__cuerpo {
         color: grey;
-        background-image: linear-gradient(to bottom, rgb(211, 211, 216),rgb(199, 195, 240), white
-        ) ;
-        font-size: 0.55rem;
+        font-size: .9rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -127,12 +122,12 @@
         align-items:stretch;
     }
     .footer__cuerpo__redes__whatsapp {
-        width: 0.5rem;
-        height: 0.5rem;
+        width: 0.7rem;
+        height: 0.7rem;
     }
     .footer__cuerpo__redes__instagram {
-        width: 0.5rem;
-        height: 0.5rem;
+        width: 0.7rem;
+        height: 0.7rem;
     }
 
     .footer__cuerpo__redes {
