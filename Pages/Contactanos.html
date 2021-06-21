@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\css\main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Roboto:ital,wght@0,100;0,300;0,700;1,100&display=swap" rel="stylesheet">
+    <title>Contactanos- L.D.S.</title>
+    <link rel="shortcut icon" type="image/png" href="..\Images\LDS.png"/>
+
+</head>
+<body>
+    <!-- Título principal de la web -->
+    <header id="grillaheader" class="header">
+        <a class="header__logo" href="..\index.html"><img class="header__logo" src="..\Images\LDS.png" alt="Logo" title="Logo"> </a> 
+        <h1 class= "header__titulo">Laboratorio <br>Dental<br>Sarcone</h1>  
+    </header>
+    <!-- Menú para navegar por la web -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span>Menú</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Nuestros_Productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="Nuestros_Productos.html#protesisRemovibles">Prótesis</a></li>
+                          <li><a class="dropdown-item" href="Nuestros_Productos.html#placasRelajacion">Placas</a></li>                        
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Quienes_somos.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contactanos.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Trabaja_con_nosotros.html">Enviá tu CV</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de Menú para navegar por la web -->
+    <main id="contactanosPAGE">
+        <!--Inicio de formulario que permite al usuario contactarse para solicitar turnos o hacer consultas -->
+        <section class="container">
+            <form  class="formulario" action="action1.php" method="GET" enctype="application/x-www-form-urlencoded">
+                <h2>¡Contactate!</h2>
+                <div class="form-group">
+                    <label class="textoBasico" for="NombreApellido">Nombre y apellido</label>
+                    <input type="text" name="NombreApellido" class="form-control" placeholder="Ingrese su nombre">
+                <div class="form-group">
+                    <label class="textoBasico" for="email">E-mail</label>
+                    <input type="email" placeholder="Ingrese mail" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label class="textoBasico" for="telefono">Teléfono de contacto</label>
+                    <input type="text" name="telefono" placeholder="Ingrese número de tel" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label class="textoBasico" for="TipoDeConsulta">Tipo de consulta</label>
+                    <select name="TipoDeConsulta">
+                        <option class="btn btn-default" value="SolicitudDeTurno">Solicitud de turno</option>
+                        <option class="btn btn-default" value="Informativa">Informativa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                <p class="textoBasico form">Producto a consultar:</p>
+                    <ul class="listaFormulario">
+                        <li>
+                            <label class="textoBasico" for="protesisRemovibles">Prótesis removibles</label>
+                            <input type="checkbox" name="protesisRemovibles" value="1">
+                        </li>
+                        <li>
+                            <label class="textoBasico" for="protesisCromo">Prótesis de cromo</label>
+                            <input type="checkbox" name="protesisCromo" value="1">
+                        </li>
+                        <li>
+                            <label class="textoBasico" for="placasRelajación">Placas de relajación</label>
+                            <input type="checkbox" name="placasRelajación" value="1">
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                <textarea class="form-control">Ingrese Consulta</textarea><br>
+                </div>  
+                <input type="reset"  class="btn btn-secondary" value="Limpiar formulario">
+                <input type="submit" class="btn btn-secondary"  value="Enviar formulario">
+            </form>
+        </section>
+        <!--Fin de formulario que permite al usuario contactarse para solicitar turnos o hacer consultas -->
+    </main>
+
+     <!-- Pie de página con información de contacto, ubicación, redes sociales -->
+    <footer id="grillafooter"> 
+        <div class="footer__cuerpo">
+            <div class="footer__cuerpo__redes">
+            <p><b>Encontranos en las redes sociales</b></p>
+                <img class="footer__cuerpo__redes__whatsapp" src="..\Images\whatsapp.PNG"> Whatsapp: (011) 15-6114-xxxx
+                <p><a class="footer__cuerpo__redes__instagram" href="https://www.instagram.com/laboratoriodentalsarcone/"><img class="footer__cuerpo__redes__instagram" src="..\Images\instagram.PNG"> Instagram</p></a>   
+            </div>
+            <div class="footer__cuerpo__ubicacion">
+                <p><b>Dónde estamos</b></p>
+                <p>San josé de Calasanz 110 </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105002.46507826321!2d-58.56875610790173!3d-34.671694771284564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8a0bb4961af%3A0xa5402e42199b10e5!2sPinturer%C3%ADa%20La%20Rotonda!5e0!3m2!1ses!2sar!4v1618985600773!5m2!1ses!2sar" style="border:0;" width="40" height="40" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin de Pie de página con información de contacto, ubicación, redes sociales -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

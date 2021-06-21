@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/* adaptación a 320 px*/
+@media only screen and (min-width: 320px) {
+  * {
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif; }
+  /* Bucle para color de los headings para desafío 12 */
+  h1 {
+    color: black; }
+  h2 {
+    color: black; }
+  h3 {
+    color: black; }
+  h4 {
+    color: black; }
+  h5 {
+    color: black; }
+  h6 {
+    color: black; }
+  /* Maps para color de los fondos para desafío 12 */
+  /*Each en la configuración de Maps para desafío 12*/
+  .fondoColor--Lila {
+    background-color: #d3d3db; }
+  .fondoColor--Principal {
+    background-color: white; }
+  /* definición formato del body */
+  body {
+    color: black;
+    margin: 0.5rem 0.5rem; }
+  /* definición de estructura de grilla */
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr 1fr;
+    grid-template-rows: 90px auto auto auto 1fr auto;
+    grid-template-areas: "grillaheader grillaheader grillaheader grillaheader" "menuGrilla menuGrilla menuGrilla menuGrilla" "grillabv grillabv grillabv grillabv" "videogrilla videogrilla videogrilla videogrilla" "descripgrilla descripgrilla descripgrilla descripgrilla" "grillafooter grillafooter grillafooter grillafooter";
+    gap: 0.1em;
+    align-items: center;
+    justify-content: center; }
+  /* IDs para las grillas */
+  #grillaheader {
+    grid-area: grillaheader;
+    color: black;
+    width: 100%; }
+  #menuGrilla {
+    grid-area: menuGrilla;
+    width: 100%; }
+  #grillafooter {
+    grid-area: grillafooter;
+    width: 100%; }
+  #grillabv {
+    grid-area: grillabv;
+    width: 100%; }
+  #descripgrilla {
+    grid-area: descripgrilla;
+    width: 100%; }
+  #videogrilla {
+    grid-area: videogrilla;
+    width: 100%;
+    margin-top: 1em;
+    text-align: center; }
+  /* Fin de IDs para las grillas */
+  /* Formato del Header y Título principal */
+  .header {
+    padding: 1rem; }
+    .header a {
+      display: inline-block;
+      position: relative;
+      text-decoration: none; }
+  .header__titulo {
+    display: inline-block;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 1rem; }
+  /* Formato de ícono del Header y transición */
+  .header__logo {
+    transition: width 1s, height 1s;
+    width: 50px;
+    height: 50px;
+    vertical-align: inherit; }
+    .header__logo .header__logo:Hover {
+      width: 70px;
+      height: 70px; }
+  /* Formato del Header y Título principal */
+  /* Formato de Sección principal de Home */
+  .cuerpo__bienvenidos {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 800;
+    display: inline-block;
+    text-align: center; }
+  .cuerpo__descripcionEmpresa {
+    text-align: center; }
+    .cuerpo__descripcionEmpresa p {
+      font-size: 0.7rem;
+      color: black;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+      font-style: italic; }
+  /* Formato de Video */
+  .video-controls {
+    width: 120px;
+    height: 120px; }
+  /* Fin de formato de Sección principal de Home */
+  /* Formato footer */
+  .footer__cuerpo {
+    color: grey;
+    background-image: linear-gradient(to bottom, #d3d3d8, #c7c3f0, white);
+    font-size: 0.55rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch; }
+  .footer__cuerpo__redes__whatsapp {
+    width: 0.5rem;
+    height: 0.5rem; }
+  .footer__cuerpo__redes__instagram {
+    width: 0.5rem;
+    height: 0.5rem; }
+  .footer__cuerpo__redes {
+    flex-basis: 1rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 1em;
+    text-align: center; }
+    .footer__cuerpo__redes a {
+      text-decoration: none;
+      color: grey; }
+  .footer__cuerpo__ubicacion {
+    flex-basis: 1rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 1em;
+    text-align: center; }
+  /* Fin formato footer */
+  /* Formulario de Contacto - Pagina Contactanos */
+  .formulario {
+    display: flex;
+    width: 90%;
+    max-width: 400px;
+    flex-direction: column;
+    margin-top: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #b3b3c8;
+    border-style: groove; }
+  /* Formato lista de formulario adaptada */
+  dl, ol, ul {
+    list-style-type: none; }
+  ol, ul {
+    padding-left: 0; }
+  /* Fin formato lista de formulario adaptada */
+  #contactanosPAGE {
+    background-image: url("../Images/fondoContactanos.png");
+    background-position: left;
+    background-size: 50%; }
+  /* Definición de formatos generales */
+  .titulo {
+    font-weight: 600;
+    font-size: 1.3rem; }
+  .subtitulo {
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 1rem; }
+  .textoBasico {
+    font-size: 0.9rem;
+    padding: 0.5rem; }
+  h2 {
+    padding: 1rem; }
+  /* Adaptación a 768 px para Grilla*/ }
+
+@media only screen and (min-width: 320px) and (min-width: 768px) {
+  /* definición de estructura de grilla */
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr 1fr;
+    grid-template-rows: 110px auto 1fr 110px;
+    gap: 0.2em; }
+  /* Inicio adaptación de distribución de secciones a tamaño de pantalla*/
+  #descripgrilla {
+    grid-column: 2/5;
+    grid-row: 4/5;
+    font-size: 0.7rem; }
+  #videogrilla {
+    grid-column: 3/4;
+    grid-row: 3/4; }
+  #grillabv {
+    font-size: 1.9rem;
+    grid-column: 1/2; }
+  /* Fin adaptación de distribución de secciones a tamaño de pantalla*/
+  /* Formato de header */
+  .header__titulo {
+    font-size: 1.3rem; }
+  /* transición de ícono principal */
+  .header__logo {
+    transition: width 1s, height 1s;
+    width: 70px;
+    height: 70px; }
+    .header__logo .header__logo:Hover {
+      width: 90px;
+      height: 90px; }
+  /* Fin de formato de header */
+  /*Formato Menú */
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start; }
+  .navbar-expand-lg .navbar-toggler {
+    display: none; }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: center; }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row; }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem; }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute; }
+  /* Fin formato de menú*/
+  /* Formato de footer */
+  .footer__cuerpo {
+    font-size: 0.75rem; }
+  .footer__cuerpo__redes__whatsapp {
+    width: 0.8rem;
+    height: 0.8rem; }
+  .footer__cuerpo__redes__instagram {
+    width: 0.8rem;
+    height: 0.8rem; }
+  /* Fin de formato de footer */ }
+
+@media only screen and (min-width: 320px) {
+  /* Adaptación a 1024 px para Grilla*/ }
+
+@media only screen and (min-width: 320px) and (min-width: 1024px) {
+  /* definición de estructura de grilla */
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 110px auto 1fr 110px;
+    gap: 0.2em; }
+  /* Inicio adaptación de distribución de secciones a tamaño de pantalla*/
+  #descripgrilla {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-size: 1.1rem; }
+  #grillabv {
+    font-size: 4rem; }
+  #videogrilla {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 3em; }
+  /* formato de video home*/
+  .video-controls {
+    height: 200px;
+    width: 200px; }
+  /* Fin adaptación de distribución de secciones a tamaño de pantalla*/
+  /* Formato de header */
+  .header__titulo {
+    font-size: 1.4rem; }
+  /* formato y transición de ícono principal */
+  .header__logo {
+    transition: width 1s, height 1s;
+    width: 80px;
+    height: 80px; }
+    .header__logo .header__logo:Hover {
+      width: 100px;
+      height: 100px; }
+  /* Fin de formato de header */
+  /*Inicio de adaptación de cuerpo principal de la home*/
+  .cuerpo__bienvenidos {
+    font-size: 3rem; }
+  .cuerpo__descripcionEmpresa p {
+    font-size: 1.2rem; }
+  /*Fin de adaptación de cuerpo principal de la home*/
+  /*Menú formato adaptación*/
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    justify-content: center; }
+  /*Menú formato adaptación*/
+  /* Formato de footer */
+  #footer__cuerpo {
+    font-size: 1rem; }
+  #footer__cuerpo__redes__whatsapp {
+    width: 1rem;
+    height: 1rem; }
+  #footer__cuerpo__redes__instagram {
+    width: 1rem;
+    height: 1rem; }
+  /* Fin de formato de footer */ }
