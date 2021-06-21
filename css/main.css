@@ -3,6 +3,8 @@
 @media only screen and (min-width: 320px) {
   * {
     padding: 0;
+    font-size: 14px;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     color: black; }
   /* definición formato del body */
@@ -40,24 +42,25 @@
   /* Formato del Header y Título principal */
   .header {
     color: black;
-    margin: 12px 12px 12px 12px;
-    background-color: gray; }
+    background-color: #d6d4d4;
+    display: flex;
+    flex-direction: row; }
     .header a {
       text-decoration: none; }
   .header__titulo {
-    display: inline-block;
-    position: relative;
+    order: 0;
     text-transform: capitalize;
     font-size: 1rem; }
   /* Formato de ícono del Header y transición */
   .header__logo {
-    transition: width 1s, height 1s;
+    order: -1;
+    transition: width .5s, height .5s;
     width: 50px;
     height: 50px;
     vertical-align: inherit; }
     .header__logo .header__logo:Hover {
-      width: 60px;
-      height: 60px; }
+      width: 52px;
+      height: 52px; }
   /* Formato del Header y Título principal */
   /* Formato de Sección principal de Home */
   .cuerpo__bienvenidos {
@@ -79,7 +82,6 @@
   /* Fin de formato de Sección principal de Home */
   /* Formato footer */
   .footer__cuerpo {
-    color: grey;
     font-size: .9rem;
     display: flex;
     flex-direction: row;
@@ -87,11 +89,11 @@
     justify-content: space-around;
     align-items: stretch; }
   .footer__cuerpo__redes__whatsapp {
-    width: 0.7rem;
-    height: 0.7rem; }
+    width: 1rem;
+    height: 1rem; }
   .footer__cuerpo__redes__instagram {
-    width: 0.7rem;
-    height: 0.7rem; }
+    width: 1rem;
+    height: 1rem; }
   .footer__cuerpo__redes {
     flex-basis: 1rem;
     flex-grow: 1;
@@ -99,8 +101,7 @@
     padding: 1em;
     text-align: center; }
     .footer__cuerpo__redes a {
-      text-decoration: none;
-      color: grey; }
+      text-decoration: none; }
   .footer__cuerpo__ubicacion {
     flex-basis: 1rem;
     flex-grow: 1;
@@ -213,11 +214,11 @@
   .footer__cuerpo {
     font-size: 0.75rem; }
   .footer__cuerpo__redes__whatsapp {
-    width: 0.8rem;
-    height: 0.8rem; }
+    width: 1.3rem;
+    height: 1.3rem; }
   .footer__cuerpo__redes__instagram {
-    width: 0.8rem;
-    height: 0.8rem; }
+    width: 1.3rem;
+    height: 1.3rem; }
   /* Fin de formato de footer */ }
 
 @media only screen and (min-width: 320px) {
