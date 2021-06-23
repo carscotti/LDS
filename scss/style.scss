@@ -181,12 +181,17 @@
     /* Fin de formato de Sección principal de Home */
 
     /* Formulario de Contacto - Pagina Contactanos */
+    #contactanos.container,  #contactanos.container-sm {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: center;
+    }
+
     .formulario {
         display: flex;
-        width: 90%;
+        width: 100%;
         max-width: 400px;
         flex-direction: column;
-        margin-top: 12px;
         padding-top:20px;
         padding-bottom: 20px;
         padding-right: 10px;
@@ -252,17 +257,20 @@
         font-weight: bold;
     }
 
-// Formato de botones formulario adaptación de Boostrap
-.btn {
-    padding: .1rem .6rem;
-    margin: .2rem
-}
+    // Formato de botones formulario adaptación de Boostrap
+    .btn {
+        padding: .1rem .6rem;
+        margin: .2rem
+        }
 
     //Prueba nuevos productos
     .w-100 {
         width:250px!important;
-        background-color: white;
+        background-color: white;     
+        margin-left: .9rem;
+        margin-top: .9rem;
     }
+    
     .card {
         border: none;
         background-color: #a0a0a0;
@@ -407,6 +415,7 @@
     .w-100 {
         width: 100% !important;
         background-color: white;
+        margin-bottom: .9rem;
     }
     h2.mb-1 {
         margin-top:0;
