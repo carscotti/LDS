@@ -306,13 +306,12 @@
         }
     }
     
-    }
     //Página quienes somos
     #QSPage p {
         margin-bottom:0;
         margin-left: 1rem;
         font-weight: 500;
-
+    } 
     .fotosQuienessomos
         {
         display: flex;
@@ -327,7 +326,7 @@
             margin-bottom:1rem;
         }
     }
-}    
+}   
 /* Adaptación a 768 px para Grilla*/
 
 @media only screen and (min-width: 768px){

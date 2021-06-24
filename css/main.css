@@ -216,23 +216,22 @@
     font-size: .9rem;
     margin-right: 1em;
     margin-left: 12px;
-    text-align: justify; } }
-
-#QSPage p {
-  margin-bottom: 0;
-  margin-left: 1rem;
-  font-weight: 500; }
-  #QSPage p .fotosQuienessomos {
+    text-align: justify; }
+  #QSPage p {
+    margin-bottom: 0;
+    margin-left: 1rem;
+    font-weight: 500; }
+  .fotosQuienessomos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 1rem; }
-    #QSPage p .fotosQuienessomos img {
+    .fotosQuienessomos img {
       max-width: 250px;
       height: auto;
       border-radius: 16px;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem; } }
 
 /* Adaptación a 768 px para Grilla*/
 @media only screen and (min-width: 768px) {
