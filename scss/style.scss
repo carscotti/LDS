@@ -14,7 +14,7 @@
     .grid {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px auto 80px auto 160px;
+        grid-template-rows: 100px 40px 100px auto 105px 400px;
         grid-template-areas:
             "grillaheader"
             "menuGrilla"
@@ -170,7 +170,7 @@
 
     .cuerpo__descripcionEmpresa {
         text-align: center;
-        font-size: 1rem;
+        font-size: .9rem;
         padding-left: .9em;
         padding-right: .9em
     }
@@ -225,14 +225,22 @@
     }
 
     #QSPage {
-        background-image: url("../Images/quienes.jpg");
+        background-image: url("../Images/fondo.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #prod {
+        background-image: url("../Images/fondo.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
 
-    /* Definición de formatos generales */
+    /* Definición de formatos generales */-3
+
     .titulo{
         font-weight: 600;
         font-size:1.3rem;
@@ -300,7 +308,26 @@
     }
     
 }
+    //Página quienes somos
+    #QSPage p {
+        margin-bottom:0;
+    }
 
+    .fotosQuienessomos
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+            img {
+            max-width:250px;
+            height: auto;
+            border-radius: 16px;
+            margin-bottom:1rem;
+            }
+    }
+    
 /* Adaptación a 768 px para Grilla*/
 
 @media only screen and (min-width: 768px){
@@ -535,7 +562,7 @@
         margin-left: 12px;
         }
     }
-.p-3 {
-max-width: 1200px !important;
-}
+    .p-3 {
+    max-width: 1200px !important;
+    }
 }
