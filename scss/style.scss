@@ -10,57 +10,6 @@
     }
     /* definición formato del body */
 
-    /* definición de estructura de grilla */
-    .grid {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100px 40px 100px auto 105px 400px;
-        grid-template-areas:
-            "grillaheader"
-            "menuGrilla"
-            "grillabv"
-            "videogrilla"
-            "descripgrilla"
-            "grillafooter";
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* IDs para las grillas */
-    #grillaheader {
-        grid-area: grillaheader;
-        width: 100%;
-        height: 110%;
-    }
-
-    #menuGrilla {
-        grid-area: menuGrilla;
-        width: 100%;
-    }
-    .bg-light {
-        background-color: #508ac4!important;
-    }
-
-    #grillafooter {
-        grid-area: grillafooter;
-        width: 100%
-    }
-
-    #grillabv {
-        grid-area: grillabv;
-        width:100%;
-    }
-    #descripgrilla{
-        grid-area: descripgrilla;
-        width:100%;
-    }
-    #videogrilla{
-        grid-area: videogrilla;
-        width: 100%;
-        text-align: center;
-    }
-    /* Fin de IDs para las grillas */
-
     /* Formato del Header y Título principal */
     .header {
         color: black;
@@ -159,6 +108,56 @@
     }
     /* Fin formato footer */
 
+    /* Definición de estructura de grilla home*/
+    .grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 40px 100px auto 105px 400px;
+        grid-template-areas:
+            "grillaheader"
+            "menuGrilla"
+            "grillabv"
+            "videogrilla"
+            "descripgrilla"
+            "grillafooter";
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* IDs para las grillas */
+    #grillaheader {
+        grid-area: grillaheader;
+        width: 100%;
+        height: 110%;
+    }
+
+    #menuGrilla {
+        grid-area: menuGrilla;
+        width: 100%;
+    }
+    .bg-light {
+        background-color: #508ac4!important;
+    }
+
+    #grillafooter {
+        grid-area: grillafooter;
+        width: 100%
+    }
+
+    #grillabv {
+        grid-area: grillabv;
+        width:100%;
+    }
+    #descripgrilla{
+        grid-area: descripgrilla;
+        width:100%;
+    }
+    #videogrilla{
+        grid-area: videogrilla;
+        width: 100%;
+        text-align: center;
+    }
+    /* Fin de IDs para las grillas de la home*/
     /* Formato de Sección principal de Home */
     .cuerpo__bienvenidos{
         font-size: 1.5rem;
@@ -180,7 +179,7 @@
     }
     /* Fin de formato de Sección principal de Home */
 
-    /* Formulario de Contacto - Pagina Contactanos */
+    /* Formulario de Contacto - Pagina Contactanos. Form de CV - Trabajá con nosotros */
     #contactanos.container,  #contactanos.container-sm, #cv.container,  #cv.container-sm {
         display: flex !important;
         flex-basis: auto;
@@ -239,7 +238,7 @@
         background-attachment: fixed;
     }
 
-    /* Definición de formatos generales */-3
+    /* Definición de formatos generales */
 
     .titulo{
         font-weight: 600;
@@ -271,7 +270,7 @@
         margin: .2rem
         }
 
-    //Prueba nuevos productos
+    //Formato nuestros productos
     .w-100 {
         width:250px!important;
         background-color: white;     
@@ -300,21 +299,22 @@
 
     div.d-flex.flex-row.align-items-center {
         p {
-        font-size:.9rem;
-        margin-right:1em;
-        margin-left: 12px;
-        text-align: justify;
+            font-size:.9rem;
+            margin-right:1em;
+            margin-left: 12px;
+            text-align: justify;
         }
     }
     
-}
+    }
     //Página quienes somos
     #QSPage p {
         margin-bottom:0;
-    }
+        margin-left: 1rem;
+        font-weight: 500;
 
     .fotosQuienessomos
-    {
+        {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -325,9 +325,9 @@
             height: auto;
             border-radius: 16px;
             margin-bottom:1rem;
-            }
+        }
     }
-    
+}    
 /* Adaptación a 768 px para Grilla*/
 
 @media only screen and (min-width: 768px){
@@ -337,7 +337,8 @@
         grid-template-columns: 100%;
         grid-template-rows: 110px auto 90px auto 160px 200px ;
         gap: 0.2em;
-    } // /* Inicio adaptación de distribución de secciones a tamaño de pantalla*/
+    }
+    //Inicio adaptación de distribución de secciones a tamaño de pantalla
     #grillabv {
         grid-column:1/2;
         grid-row: 3/4;
@@ -375,11 +376,11 @@
         .header__logo:Hover {
             width: 80px;
             height: 80px;
-            }
+        }
     }
     /* Fin de formato de header */
     
-    /*Formato  */
+    /*Formato menú*/
     .navbar-expand-lg {
         flex-wrap: nowrap;
         justify-content: flex-start;
@@ -440,7 +441,6 @@
     /* Fin de formato de cuerpo de HOME */
     
     //Adaptación para nuestros productos
-    //ADAPTACIÓN IMAGENES
     .snipimage img {
         max-height: 440px;
         max-width: 500px;
@@ -474,7 +474,7 @@
     }    
     .p-3 {
         max-width: 800px !important;
-        }
+    }
 }
 
 @media only screen and (min-width: 1024px){
@@ -490,7 +490,7 @@
     #grillabv {
         grid-column:1/2;
         grid-row: 3/4;
-   }
+    }
     #videogrilla{
         margin-top: 1em;
         grid-column:1/2;
@@ -506,7 +506,6 @@
         grid-column:1/2;
         grid-row: 6/7;
     }
-
     /* Fin adaptación de distribución de secciones a tamaño de pantalla*/
 
     /* Formato de header */
@@ -536,10 +535,10 @@
         display: flex;
         flex-basis: auto;
         justify-content: center;
-     }
+    }
      /*Menú formato adaptación*/
-     
-     
+
+
     //Adaptación nuestros productos
     .snipimage img {
         max-height:500px;

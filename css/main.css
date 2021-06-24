@@ -8,38 +8,6 @@
     font-family: 'Poppins', sans-serif;
     color: black; }
   /* definición formato del body */
-  /* definición de estructura de grilla */
-  .grid {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 40px 100px auto 105px 400px;
-    grid-template-areas: "grillaheader" "menuGrilla" "grillabv" "videogrilla" "descripgrilla" "grillafooter";
-    align-items: center;
-    justify-content: center; }
-  /* IDs para las grillas */
-  #grillaheader {
-    grid-area: grillaheader;
-    width: 100%;
-    height: 110%; }
-  #menuGrilla {
-    grid-area: menuGrilla;
-    width: 100%; }
-  .bg-light {
-    background-color: #508ac4 !important; }
-  #grillafooter {
-    grid-area: grillafooter;
-    width: 100%; }
-  #grillabv {
-    grid-area: grillabv;
-    width: 100%; }
-  #descripgrilla {
-    grid-area: descripgrilla;
-    width: 100%; }
-  #videogrilla {
-    grid-area: videogrilla;
-    width: 100%;
-    text-align: center; }
-  /* Fin de IDs para las grillas */
   /* Formato del Header y Título principal */
   .header {
     color: black;
@@ -113,6 +81,38 @@
         font-size: .8rem;
         margin-bottom: 7px; }
   /* Fin formato footer */
+  /* Definición de estructura de grilla home*/
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 40px 100px auto 105px 400px;
+    grid-template-areas: "grillaheader" "menuGrilla" "grillabv" "videogrilla" "descripgrilla" "grillafooter";
+    align-items: center;
+    justify-content: center; }
+  /* IDs para las grillas */
+  #grillaheader {
+    grid-area: grillaheader;
+    width: 100%;
+    height: 110%; }
+  #menuGrilla {
+    grid-area: menuGrilla;
+    width: 100%; }
+  .bg-light {
+    background-color: #508ac4 !important; }
+  #grillafooter {
+    grid-area: grillafooter;
+    width: 100%; }
+  #grillabv {
+    grid-area: grillabv;
+    width: 100%; }
+  #descripgrilla {
+    grid-area: descripgrilla;
+    width: 100%; }
+  #videogrilla {
+    grid-area: videogrilla;
+    width: 100%;
+    text-align: center; }
+  /* Fin de IDs para las grillas de la home*/
   /* Formato de Sección principal de Home */
   .cuerpo__bienvenidos {
     font-size: 1.5rem;
@@ -128,7 +128,7 @@
   #homeImages {
     width: inherit; }
   /* Fin de formato de Sección principal de Home */
-  /* Formulario de Contacto - Pagina Contactanos */
+  /* Formulario de Contacto - Pagina Contactanos. Form de CV - Trabajá con nosotros */
   #contactanos.container, #contactanos.container-sm, #cv.container, #cv.container-sm {
     display: flex !important;
     flex-basis: auto;
@@ -174,8 +174,7 @@
     background-size: cover;
     background-attachment: fixed; }
   /* Definición de formatos generales */
-  -3
-.titulo {
+  .titulo {
     font-weight: 600;
     font-size: 1.3rem; }
   .subtitulo {
@@ -220,19 +219,20 @@
     text-align: justify; } }
 
 #QSPage p {
-  margin-bottom: 0; }
-
-.fotosQuienessomos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-bottom: 1rem; }
-  .fotosQuienessomos img {
-    max-width: 250px;
-    height: auto;
-    border-radius: 16px;
-    margin-bottom: 1rem; }
+  margin-bottom: 0;
+  margin-left: 1rem;
+  font-weight: 500; }
+  #QSPage p .fotosQuienessomos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 1rem; }
+    #QSPage p .fotosQuienessomos img {
+      max-width: 250px;
+      height: auto;
+      border-radius: 16px;
+      margin-bottom: 1rem; }
 
 /* Adaptación a 768 px para Grilla*/
 @media only screen and (min-width: 768px) {
@@ -271,7 +271,7 @@
       width: 80px;
       height: 80px; }
   /* Fin de formato de header */
-  /*Formato  */
+  /*Formato menú*/
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start; }
